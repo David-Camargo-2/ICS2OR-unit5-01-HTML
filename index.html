@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html lang="en-ca">
+  <head>
+  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">.
+  <meta name="description" content="Putting images this time">
+  <meta name="keywords" content="MHTS, website">
+  <meta name="author" content="David Camargo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Hello, World! </title>
+  </head>
+  <body>
+  <p>Pick a number from 1 to 6 and see if you guessed the same number as me</p>
+  
+   
+  <form>
+  <label for="number">Number 1-6:</label><br>
+  <input type="text" id="fname" name="fname"> <br>
+
+
+  <input type="reset">
+</form> 
+  
+  
+  
+ <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,7)">Click Me</button>
+ <p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+  </body>
+</html>
